@@ -149,6 +149,48 @@ footer .text-main-heading-color {
   color: var(--main-heading-color);
 }
 
-#contact .text-main-heading-color {
-  color: var(--main-heading-color);
+/* Inicio estilos contacto */
+/* Fondo y bordes del contenedor */
+#contacto {
+  background-color: var(--main-secondary-bg-color); /* Color de fondo personalizado */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
 }
+
+/* Personalización del color del título */
+#contacto .text-main-heading-color {
+  color: var(--main-heading-color); /* Color del encabezado */
+}
+
+.form-floating .form-control:focus {
+  border-color: var(--main-link-color);
+  box-shadow: 0 0 5px rgba(225, 68, 52, 0.5);
+}
+
+/* Estilo para el área de mensaje (textarea) */
+#mensaje {
+  height: 150px; /* Hacemos el textarea más grande */
+  resize: vertical; /* Permite redimensionarlo verticalmente */
+}
+
+/* Ajustes para el botón */
+.btn-danger {
+  background-color: var(--main-link-color); /* Cambiar el color de fondo si se desea */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover para el botón */
+.btn-danger:hover {
+  background-color: #e14434; /* Color al pasar el mouse */
+  transform: translateY(-2px); /* Le da un efecto de elevarse */
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  .btn.w-50 {
+    width: 80%; /* Hacemos el botón más grande en pantallas móviles */
+  }
+}
+
+/* Fin estilos contáctanos */

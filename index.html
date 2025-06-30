@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=., initial-scale=1.0">
     <title>Hackathon Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,13 +20,16 @@
         <h1 class="h1">Hackathon Store</h1>
         <div id="main-content">
             <!-- CONTENIDO INTRODUCTORIO O ATRACTIVO -->
-                <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" id="intro">
-                    <div class="container">
-                        <h1 id = 'titulo'class="display-4 fw-bold animate-fade">Descubre Tu Potencial Deportivo</h1>
-                        <p id = 'subtitulo'class="lead mt-3 animate-fade"><em>La mejor tienda para atletas apasionados. Equípate con lo mejor en ropa, calzado y accesorios deportivos.</em></p>
-                        <a href="#productos" id = "boton_c"class="btn btn-primary btn-lg mt-4 animate-button">Ver productos</a>
-                    </div>
-                </section>
+            <section class="hero-section text-center text-white d-flex align-items-center justify-content-center"
+                id="intro">
+                <div class="container">
+                    <h1 id='titulo' class="display-4 fw-bold animate-fade">Descubre Tu Potencial Deportivo</h1>
+                    <p id='subtitulo' class="lead mt-3 animate-fade"><em>La mejor tienda para atletas apasionados.
+                            Equípate con lo mejor en ropa, calzado y accesorios deportivos.</em></p>
+                    <a href="#productos" id="boton_c" class="btn btn-primary btn-lg mt-4 animate-button">Ver
+                        productos</a>
+                </div>
+            </section>back-ground-main-link-color
         </div>
         <div id="products">
             <section class="container py-5" id="productos">
@@ -119,22 +123,41 @@
 
         </div>
         <div id="galery">
-
         </div>
-        <section id="contact" class="container py-4">
-            <h2 class="text-main-heading-color text-center mb-5">Contáctanos</h2>
-            <form action="">
-                <label for="">Nombre</label>
-                <input type="text">
-                <label for="">Email</label>
-                <input type="text">
-                <label for="">Mensaje</label>
-                <textarea name="" id=""></textarea>
+        <div id="contact">
+            <section id="contacto" class="container pb-5 mb-3">
+                <h2 class="text-main-heading-color text-center mb-5">Contáctanos</h2>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                                <label for="nombre">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                        </div>
+                    </div>
 
-            </form>
-        </section>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje"
+                            required></textarea>
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+
+                    <!-- Botón centrado con clases de Bootstrap -->
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn btn-danger w-50">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
         <div id="comments">
-
         </div>
     </div>
     <footer class="bg-main-secondary-bg-color text-dark py-4">
@@ -185,7 +208,9 @@
             <small>&copy; 2025 HackathonStore. Todos los derechos reservados.</small>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
