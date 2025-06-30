@@ -6,6 +6,47 @@
   --main-text-color: #000;
 }
 
+body {
+  background-color: #b5b5b5; /* Gris muy bajito */
+}
+
+.text-primary-custom {
+  color: #5eabd6;
+}
+
+.btn-custom-2 {
+  background-color: #e14434;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #c93a2d;
+}
+
+.product-card {
+  border-radius: 20px;
+  background-color: #fefbc7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #000;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #000;
+  font-size: 0.95rem;
+}
+
 footer {
   background-color: var(--main-secondary-bg-color);
 }
