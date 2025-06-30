@@ -58,3 +58,92 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --main-background-color: #ffffff;
+  --main-secondary-bg-color: #fefbc7;
+  --main-heading-color: #5eabd6;
+  --main-link-color: #e14434;
+  --main-text-color: #000;
+}
+
+body {
+  background-color: #b5b5b5; /* Gris muy bajito */
+}
+
+.text-primary-custom {
+  color: #5eabd6;
+}
+
+.btn-custom-2 {
+  background-color: #e14434;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #c93a2d;
+}
+
+.product-card {
+  border-radius: 20px;
+  background-color: #fefbc7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #000;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #000;
+  font-size: 0.95rem;
+}
+
+footer {
+  background-color: var(--main-secondary-bg-color);
+}
+
+footer h5 {
+  color: var(--main-heading-color);
+}
+
+footer a {
+  color: var(--main-link-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--main-heading-color);
+}
+
+footer .img-fluid {
+  max-width: 150px;
+}
+
+footer .d-flex a {
+  font-size: 20px;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 8px;
+}
+
+footer .text-main-link-color {
+  color: var(--main-link-color);
+}
+
+footer .text-main-link-color:hover {
+  color: var(--main-heading-color);
+}
+
+footer .text-main-heading-color {
+  color: var(--main-heading-color);
+}
