@@ -1,5 +1,5 @@
 .hero-section {
-  height: 100vh;
+  height: 80vh;
   background: linear-gradient(to bottom right, #FFB4B4, #FF6F61); /* Cambia a cualquier color que te guste */
   display: flex;
   padding: 60px 20px;
@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  background-color: #b5b5b5; /* Gris muy bajito */
+  background-color: #fff; /* Gris muy bajito */
 }
 
 .text-primary-custom {
@@ -78,6 +78,7 @@ body {
   background-color: #e14434;
   color: white;
   border-radius: 20px;
+  border-color: #fefbc7;
   transition: background-color 0.3s ease;
 }
 
