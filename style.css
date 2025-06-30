@@ -1,7 +1,48 @@
 :root {
   --main-background-color: #ffffff;
-  --main-secondary-bg-color: #FEFBC7;
-  --main-heading-color: #5EABD6;
-  --main-link-color: E14434;
+  --main-secondary-bg-color: #fefbc7;
+  --main-heading-color: #5eabd6;
+  --main-link-color: #e14434;
   --main-text-color: #000;
+}
+
+footer {
+  background-color: var(--main-secondary-bg-color);
+}
+
+footer h5 {
+  color: var(--main-heading-color);
+}
+
+footer a {
+  color: var(--main-link-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--main-heading-color);
+}
+
+footer .img-fluid {
+  max-width: 150px;
+}
+
+footer .d-flex a {
+  font-size: 20px;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 8px;
+}
+
+footer .text-main-link-color {
+  color: var(--main-link-color);
+}
+
+footer .text-main-link-color:hover {
+  color: var(--main-heading-color);
+}
+
+footer .text-main-heading-color {
+  color: var(--main-heading-color);
 }
