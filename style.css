@@ -1,5 +1,5 @@
 .hero-section {
-  height: 100vh;
+  height: 80vh;
   background: linear-gradient(to bottom right, #ffb4b4, #ff6f61); /* Cambia a cualquier color que te guste */
   display: flex;
   padding: 60px 20px;
@@ -68,7 +68,7 @@ html {
 }
 
 body {
-  background-color: #b5b5b5; /* Gris muy bajito */
+  background-color: #fff; /* Gris muy bajito */
 }
 
 .text-primary-custom {
@@ -79,6 +79,7 @@ body {
   background-color: #e14434;
   color: white;
   border-radius: 20px;
+  border-color: #fefbc7;
   transition: background-color 0.3s ease;
 }
 
@@ -147,6 +148,69 @@ footer .text-main-link-color:hover {
 
 footer .text-main-heading-color {
   color: var(--main-heading-color);
+}
+
+.galeria-carrusel img {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+}
+
+@media (max-width: 768px) {
+  .galeria-carrusel img {
+    height: 250px;
+  }
+}
+
+.comment-card {
+  background-color: #fefbc7;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comment-card:hover {
+  transform: translateY(-5px);
+}
+
+.comment-text {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #e14434;
+  margin: 0;
+}
+
+/* Imagen de perfil */
+.comment-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Animaciones */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 /* Inicio estilos contacto */
