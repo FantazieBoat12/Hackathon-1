@@ -150,6 +150,10 @@ footer .text-main-heading-color {
   color: var(--main-heading-color);
 }
 
+footer p {
+  margin-bottom: 8px;
+}
+
 .galeria-carrusel img {
   height: 600px;
   object-fit: cover;
