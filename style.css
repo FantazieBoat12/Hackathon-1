@@ -11,7 +11,7 @@
   animation: fadeInUp 1s ease-out forwards;
 }
 
-#boton_c {
+.boton_c {
   background-color: #e14434;
   color: white;
   border: none;
