@@ -165,3 +165,49 @@ footer .text-main-heading-color {
     height: 250px;
   }
 }
+
+.comment-card {
+  background-color: #FEFBC7;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comment-card:hover {
+  transform: translateY(-5px);
+}
+
+.comment-text {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #E14434;
+  margin: 0;
+}
+
+/* Imagen de perfil */
+.comment-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Animaciones */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
