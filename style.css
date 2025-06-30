@@ -237,19 +237,6 @@ footer .text-main-heading-color {
   resize: vertical; /* Permite redimensionarlo verticalmente */
 }
 
-/* Ajustes para el botón */
-.btn-danger {
-  background-color: var(--main-link-color); /* Cambiar el color de fondo si se desea */
-  border: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Efecto hover para el botón */
-.btn-danger:hover {
-  background-color: #e14434; /* Color al pasar el mouse */
-  transform: translateY(-2px); /* Le da un efecto de elevarse */
-}
-
 /* Ajuste para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
   .btn.w-50 {
