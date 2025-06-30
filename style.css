@@ -1,6 +1,6 @@
 .hero-section {
   height: 80vh;
-  background: linear-gradient(to bottom right, #FFB4B4, #FF6F61); /* Cambia a cualquier color que te guste */
+  background: linear-gradient(to bottom right, #ffb4b4, #ff6f61); /* Cambia a cualquier color que te guste */
   display: flex;
   padding: 60px 20px;
 }
@@ -12,7 +12,7 @@
 }
 
 .boton_c {
-  background-color: #E14434;
+  background-color: #e14434;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -21,15 +21,15 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #titulo {
-  font-family: 'aboreto', sans-serif;
+  font-family: "aboreto", sans-serif;
   font-weight: bold;
   color: white;
 }
 #subtitulo {
-  font-family: 'aboreto', sans-serif;
+  font-family: "aboreto", sans-serif;
   color: white;
   font-size: 1.2rem;
   margin-top: 10px;
@@ -47,7 +47,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -167,7 +168,7 @@ footer .text-main-heading-color {
 }
 
 .comment-card {
-  background-color: #FEFBC7;
+  background-color: #fefbc7;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
@@ -188,7 +189,7 @@ footer .text-main-heading-color {
 
 .comment-author {
   font-weight: bold;
-  color: #E14434;
+  color: #e14434;
   margin: 0;
 }
 
@@ -211,3 +212,49 @@ footer .text-main-heading-color {
   opacity: 1;
   transition: opacity 1s ease;
 }
+
+/* Inicio estilos contacto */
+/* Fondo y bordes del contenedor */
+#contacto {
+  background-color: var(--main-secondary-bg-color); /* Color de fondo personalizado */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Personalización del color del título */
+#contacto .text-main-heading-color {
+  color: var(--main-heading-color); /* Color del encabezado */
+}
+
+.form-floating .form-control:focus {
+  border-color: var(--main-link-color);
+  box-shadow: 0 0 5px rgba(225, 68, 52, 0.5);
+}
+
+/* Estilo para el área de mensaje (textarea) */
+#mensaje {
+  height: 150px; /* Hacemos el textarea más grande */
+  resize: vertical; /* Permite redimensionarlo verticalmente */
+}
+
+/* Ajustes para el botón */
+.btn-danger {
+  background-color: var(--main-link-color); /* Cambiar el color de fondo si se desea */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover para el botón */
+.btn-danger:hover {
+  background-color: #e14434; /* Color al pasar el mouse */
+  transform: translateY(-2px); /* Le da un efecto de elevarse */
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  .btn.w-50 {
+    width: 80%; /* Hacemos el botón más grande en pantallas móviles */
+  }
+}
+
+/* Fin estilos contáctanos */
