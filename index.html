@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="Bootstrap" width="50" height="50" class="d-inline-block">HackStore
@@ -39,143 +39,163 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-info" href="#comments">Comentarios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-success" href="carrito.html">🛒 Ver carrito</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="justify-content">
 
-        <div id="main-content">
-            <!-- CONTENIDO INTRODUCTORIO O ATRACTIVO -->
-            <section class="hero-section text-center text-white d-flex align-items-center justify-content-center"
-                id="intro">
-                <div class="container">
-                    <h1 id='titulo' class="display-4 fw-bold animate-fade">Descubre Tu Potencial Deportivo</h1>
-                    <p id='subtitulo' class="lead mt-3 animate-fade"><em>La mejor tienda para atletas apasionados.
-                            Equípate con lo mejor en ropa, calzado y accesorios deportivos.</em></p>
-                    <a href="#productos" id="boton_c" class="btn btn-primary btn-lg mt-4 animate-button">Ver
-                        productos</a>
-                </div>
-            </section>
-        </div>
+    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center" id="intro">
+  <div class="container">
+    <img src="img/logo.png" alt="HackStore Logo" style="width: 250px;" class="mb-4 animate-fade">
+    <h1 id="titulo" class="display-4 fw-bold animate-fade">Descubre Tu Potencial Deportivo</h1>
+    <p id="subtitulo" class="lead mt-3 animate-fade">
+      <em>La mejor tienda para atletas apasionados. Equípate con lo mejor en ropa, calzado y accesorios deportivos.</em>
+    </p>
+    <a href="#productos" id="boton_c" class="btn btn-primary btn-lg mt-4 animate-button">Ver productos</a>
+  </div>
+</section>
+
+
+    </div>
         <div id="products">
             <section class="container py-5" id="productos">
                 <h2 class="text-center text-primary-custom mb-5">Productos más vendidos</h2>
                 <div class="row g-4">
                     <!-- Producto 1 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://986fbaf6d7.cbaul-cdnwnd.com/a0bcaf424450c257be7b0ea780e1558e/system_preview_detail_200000109-d11c8d2187/25130198_10212662961080326_2130284938_o.jpg"
-                                class="card-img-top rounded-top" alt="Producto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Mochila Deportiva Nike</h5>
-                                <p class="card-text">Lleva tus articulos deportivos contigo con esta cómoda mochila.
-                                    Ideal para ir al gimnacio y salir a hacer deporte.</p>
-                                <ul>
-                                    <li>La mejor calidad del mercado</li>
-                                    <li>Color negro y blanco</li>
-                                    <li>Impermeable</li>
-                                    <li>Le cabe todo</li>
-                                </ul>
-                                <button id="boton_c" class=" btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://986fbaf6d7.cbaul-cdnwnd.com/a0bcaf424450c257be7b0ea780e1558e/system_preview_detail_200000109-d11c8d2187/25130198_10212662961080326_2130284938_o.jpg" class="card-img-top rounded-top" alt="Producto 1">
+                        <div class="card-body">
+                        <h5 class="card-title">Mochila Deportiva Nike</h5>
+                        <p class="card-text">Lleva tus articulos deportivos contigo con esta cómoda mochila. Ideal para ir al gimnacio y salir a hacer deporte.</p>
+                        <ul>
+                            <li>La mejor calidad del mercado</li>
+                            <li>Color negro y blanco</li>
+                            <li>Impermeable</li>
+                        </ul>
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('Mochila Deportiva Nike', 799, 'https://986fbaf6d7.cbaul-cdnwnd.com/a0bcaf424450c257be7b0ea780e1558e/system_preview_detail_200000109-d11c8d2187/25130198_10212662961080326_2130284938_o.jpg', 10)">
+                            Añadir al carrito
+                        </button>
                         </div>
                     </div>
 
                     <!-- Producto 2 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://cdn1.coppel.com/images/catalog/mkp/4802/3000/48021537-1.jpg"
-                                class="card-img-top rounded-top" alt="Producto 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Balón Umbro Neo Swerve</h5>
-                                <p class="card-text">Galardonado balon con resistencia profesional.</p>
-                                <ul>
-                                    <li>No. 5 (Profesional), Diferentes colores</li>
-                                </ul>
-                                <button id="boton_c" class="btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://cdn1.coppel.com/images/catalog/mkp/4802/3000/48021537-1.jpg" class="card-img-top rounded-top" alt="Producto 2">
+                        <div class="card-body">
+                        <h5 class="card-title">Balón Umbro Neo Swerve</h5>
+                        <p class="card-text">Galardonado balon con resistencia profesional.</p>
+                        <ul>
+                            <li>No. 5 (Profesional)</li>
+                            <li>Diferentes colores</li>
+                        </ul>
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('Balón Umbro Neo Swerve', 450, 'https://cdn1.coppel.com/images/catalog/mkp/4802/3000/48021537-1.jpg', 12)">
+                            Añadir al carrito
+                        </button>
                         </div>
                     </div>
 
                     <!-- Producto 3 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://m.media-amazon.com/images/I/618-2wEmXAL._AC_SY879_.jpg"
-                                class="card-img-top rounded-top" alt="Producto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">PUMA Guantes Essential Training</h5>
-                                <p class="card-text">No salgas de casa sin tus guantes de entrenamiento. Ideales para
-                                    esos días de gimnacio.</p>
-                                <ul>
-                                    <li>Cómodos y lijeros</li>
-                                    <li>Resistentes</li>
-                                    <li>Pácticos, caben en todas partes</li>
-                                </ul>
-                                <button id="boton_c" class="btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://m.media-amazon.com/images/I/618-2wEmXAL._AC_SY879_.jpg" class="card-img-top rounded-top" alt="Producto 3">
+                        <div class="card-body">
+                        <h5 class="card-title">PUMA Guantes Essential Training</h5>
+                        <p class="card-text">No salgas de casa sin tus guantes de entrenamiento. Ideales para esos días de gimnacio.</p>
+                        <ul>
+                            <li>Cómodos y lijeros</li>
+                            <li>Resistentes</li>
+                        </ul>
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('PUMA Guantes Essential Training', 299, 'https://m.media-amazon.com/images/I/618-2wEmXAL._AC_SY879_.jpg', 8)">
+                            Añadir al carrito
+                        </button>
+
                         </div>
                     </div>
 
                     <!-- Producto 4 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://acropolis.com.mx/cdn/shop/files/544350_1_d47fa498-3e67-430f-a320-3b8acfc27a11_800x.jpg?v=1750189571"
-                                class="card-img-top rounded-top" alt="Producto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Playera Deportiva Jaspeada Wilson</h5>
-                                <p class="card-text">La calidad de los articulos wilson destacan en el mercado. Ponte en
-                                    vanguardia con la playera deportiva del momento.</p>
-                                <ul>
-                                    <li>Varios colores</li>
-                                    <li>Diseño antitranspirante</li>
-                                    <li>Tela ultraligera</li>
-                                </ul>
-                                <button id="boton_c" class="btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://acropolis.com.mx/cdn/shop/files/544350_1_d47fa498-3e67-430f-a320-3b8acfc27a11_800x.jpg?v=1750189571" class="card-img-top rounded-top" alt="Producto 3">
+                        <div class="card-body">
+                        <h5 class="card-title">Playera Deportiva Jaspeada Wilson</h5>
+                        <p class="card-text">La calidad de los articulos wilson destacan en el mercado. Ponte en vanguardia con la playera deportiva del momento.</p>
+                        <ul>
+                            <li>Varios colores</li>
+                            <li>Diseño antitranspirante</li>
+                            <li>Tela ultraligera</li>
+                        </ul>
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('Playera Deportiva Jaspeada Wilson', 349, 'https://acropolis.com.mx/cdn/shop/files/544350_1_d47fa498-3e67-430f-a320-3b8acfc27a11_800x.jpg?v=1750189571', 6)">
+                            Añadir al carrito
+                        </button>
+
                         </div>
                     </div>
 
                     <!-- Producto 5 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://stylo.mx/cdn/shop/files/R481019-1_1_grd.jpg?v=1712949349">
-                            <div class="card-body">
-                                <h5 class="card-title">Tenis Deportivos Caballero Umbro</h5>
-                                <p class="card-text">Comodidad, firmeza, estilo. Umbro te sorprenderá con su nueva línea
-                                    de tenis.</p>
-                                <ul>
-                                    <li>Ultra confort</li>
-                                    <li>Variedad de tallas</li>
-                                    <li>Resistentes</li>
-                                    <li>A la moda</li>
-                                </ul>
-                                <button id="boton_c" class="btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://stylo.mx/cdn/shop/files/R481019-1_1_grd.jpg?v=1712949349">
+                        <div class="card-body">
+                        <h5 class="card-title">Tenis Deportivos Caballero Umbro</h5>
+                        <p class="card-text">Comodidad, firmeza, estilo. Umbro te sorprenderá con su nueva línea de tenis.</p>
+                        <ul>
+                            <li>Ultra confort</li>
+                            <li>Variedad de tallas</li>
+                            <li>Resistentes</li>
+                        </ul>
+
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('Tenis Deportivos Caballero Umbro', 899, 'https://stylo.mx/cdn/shop/files/R481019-1_1_grd.jpg?v=1712949349', 15)">
+                            Añadir al carrito
+                        </button>
+
                         </div>
                     </div>
 
                     <!-- Producto 6 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card product-card h-100">
-                            <img src="https://media.foot-store.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_1367767-877_00.jpg"
-                                class="card-img-top rounded-top" alt="Producto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Blusa Deportiva Dama Under Armour</h5>
-                                <p class="card-text">Under Armour es sinonimo de elegancia, incluso en el deporte.
-                                    Belleza y comfort vasn de la mano cuando se trata de sus artículos.</p>
-                                <ul>
-                                    <li>Comodidad y gracia</li>
-                                    <li>Libertad de movimiento</li>
-                                    <li>Firmeza y suavidad</li>
-                                </ul>
-                                <button id="boton_c" class="btn-custom-2 w-100">Ver más</button>
-                            </div>
+                    <div class="card product-card h-100">
+                        <img src="https://media.foot-store.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_1367767-877_00.jpg" class="card-img-top rounded-top" alt="Producto 3">
+                        <div class="card-body">
+                        <h5 class="card-title">Blusa Deportiva Dama Under Armour</h5>
+                        <p class="card-text">Descripción breve del producto que destaque sus beneficios y atractivo.</p>
+                        <button class="btn-custom-2 w-100"
+                            onclick="agregarAlCarrito('Blusa Deportiva Dama Under Armour', 379, 'https://media.foot-store.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_1367767-877_00.jpg', 9)">
+                            Añadir al carrito
+                        </button>
+
                         </div>
                     </div>
             </section>
         </div>
+                <script>
+                    function agregarAlCarrito(nombre, precio, imagen, stock) {
+                    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                    const index = carrito.findIndex(item => item.nombre === nombre);
+                    if (index >= 0) {
+                        if (carrito[index].cantidad < stock) {
+                            carrito[index].cantidad += 1;
+                        } else {
+                alert("No hay más stock disponible.");
+                return;
+              }
+                 } else {
+              carrito.push({ nombre, precio, imagen, cantidad: 1, stock });
+                }
+             localStorage.setItem('carrito', JSON.stringify(carrito));
+                alert(`${nombre} añadido al carrito.`);
+             }
+        </script>
         <div id="services">
 
         </div>
