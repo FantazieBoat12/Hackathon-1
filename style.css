@@ -1,10 +1,7 @@
 :root {
-  --main-heading-color: #5EABD6;
-  --main-background-color: #fff;
+  --main-background-color: #ffffff;
   --main-secondary-bg-color: #FEFBC7;
-  --main-link-color: #E14434;
+  --main-heading-color: #5EABD6;
+  --main-link-color: E14434;
   --main-text-color: #000;
-}
-body{
-    background-color: var(--main-link-color);
 }
