@@ -1,3 +1,63 @@
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #FFB4B4, #FF6F61); /* Cambia a cualquier color que te guste */
+  display: flex;
+  padding: 60px 20px;
+}
+
+.animate-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+#boton_c {
+  background-color: #E14434;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+#titulo {
+  font-family: 'aboreto', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+#subtitulo {
+  font-family: 'aboreto', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.animate-button {
+  animation: pulse 3s infinite;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --main-background-color: #ffffff;
   --main-secondary-bg-color: #fefbc7;
